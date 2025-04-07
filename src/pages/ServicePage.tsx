@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingForm from "@/components/BookingForm";
+import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 type ServicePageProps = {
   serviceType: string;
@@ -36,13 +38,18 @@ const ServicePage = ({ serviceType, description, benefits, image }: ServicePageP
               ))}
             </ul>
             
-            <div className="rounded-lg overflow-hidden mb-8">
-              <img 
-                src={image} 
-                alt={`${serviceType} Service`}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            <Card className="rounded-lg overflow-hidden mb-8">
+              <AspectRatio ratio={16/9}>
+                <img 
+                  src={image} 
+                  alt={`${serviceType} Service`}
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
+              <CardContent className="p-4 bg-slate-50">
+                <p className="text-sm text-gray-500">Professional {serviceType} by our certified technicians</p>
+              </CardContent>
+            </Card>
           </div>
           
           <div>

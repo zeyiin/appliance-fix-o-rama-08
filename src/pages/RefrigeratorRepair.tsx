@@ -15,7 +15,7 @@ const RefrigeratorRepair = () => {
         "Most repairs completed in a single visit",
         "Servicing all major brands and models"
       ]}
-      image="/placeholder.svg"
+      image="/refrigerator-repair.jpg"
     />
   );
 };

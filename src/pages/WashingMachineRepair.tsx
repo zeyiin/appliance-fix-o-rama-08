@@ -15,7 +15,7 @@ const WashingMachineRepair = () => {
         "Comprehensive diagnostic service",
         "Preventative maintenance options available"
       ]}
-      image="/placeholder.svg"
+      image="/washing-machine-repair.jpg"
     />
   );
 };

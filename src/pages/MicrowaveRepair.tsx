@@ -15,7 +15,7 @@ const MicrowaveRepair = () => {
         "Full testing after repair completion",
         "Safety-first approach to all repairs"
       ]}
-      image="/placeholder.svg"
+      image="/microwave-repair.jpg"
     />
   );
 };
